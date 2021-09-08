@@ -7,7 +7,7 @@
     header ("Access-Control-Allow-Headers: *");
     if($_SERVER['REQUEST_METHOD']=='POST'){
         // SDK de Mercado Pago
-        require_once 'C:\wamp64\www\ejemplo2\vendor\autoload.php';
+        require_once (__DIR__.'../vendor/autoload.php');
         // Agrega credenciales
         MercadoPago\SDK::setAccessToken('TEST-11762472748563-081923-f6c1d5d1d637d865580d438da9d492c8-448109497');
         $payment = new MercadoPago\Payment();
