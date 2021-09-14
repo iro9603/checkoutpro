@@ -14,7 +14,7 @@
                 require __DIR__ . '/../../client/index.html';
                 break;
     
-            case 'https://finanzas-aantik.azurewebsites.net/process_payment/process_payment.php':
+            case 'https://web-proyecto-iro.azurewebsites.net/process_payment/process_payment.php':
                     // SDK de Mercado Pago
                 require __DIR__.'../vendor/autoload.php';
                 // Agrega credenciales
