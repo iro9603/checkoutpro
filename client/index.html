@@ -10,6 +10,7 @@
 <body>
   <h1>Aantik pago</h1>
   <br/>
+  <script src="https://sdk.mercadopago.com/js/v2"></script>
   <form id="form-checkout" >
     <input type="text" name="cardNumber" id="form-checkout__cardNumber" />
     <input type="text" name="cardExpirationMonth" id="form-checkout__cardExpirationMonth" />
@@ -25,7 +26,7 @@
     <progress value="0" class="progress-bar">Cargando...</progress>
  </form>
  <!-- Add step #2 -->
- <script src="https://sdk.mercadopago.com/js/v2"></script>
+ 
  <script>
      const mp = new MercadoPago('TEST-3b68086a-402e-409c-a0f5-a07c537a7732');
      // Add step #3
