@@ -4,14 +4,7 @@ header ("Access-Control-Allow-Origin: *");
 header ("Access-Control-Expose-Headers: Content-Length, X-JSON");
 header ("Access-Control-Allow-Methods: GET, POST, PATCH, PUT, DELETE, OPTIONS");
 header ("Access-Control-Allow-Headers: *");
-$path=$_SERVER["https://finanzas-aantik.azurewebsites.net/client/index.php"];
-switch($path){
-        case '':
-        case '/':
-            require __DIR__ . '/../../client/index.php';
-            break;
 
-        case 'https://finanzas-aantik.azurewebsites.net/client/index.php':
                 // SDK de Mercado Pago
             require __DIR__.'/vendor/autoload.php';
             // Agrega credenciales
@@ -39,9 +32,8 @@ switch($path){
                 'id' => $payment->id
             );
             echo json_encode($response);
-            break;
+           
             
-}
 
 ?>
 <!DOCTYPE html>
