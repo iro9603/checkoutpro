@@ -93,7 +93,7 @@
         identificationType,
       } = cardForm.getCardFormData();
 
-      fetch('/process_payment', {
+      fetch('https://finanzas-aantik.azurewebsites.net/process_payment', {
         method: "POST",
         mode:"cors",
         headers: {
