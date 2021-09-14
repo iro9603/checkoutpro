@@ -4,7 +4,7 @@ header ("Access-Control-Allow-Origin: *");
 header ("Access-Control-Expose-Headers: Content-Length, X-JSON");
 header ("Access-Control-Allow-Methods: GET, POST, PATCH, PUT, DELETE, OPTIONS");
 header ("Access-Control-Allow-Headers: *");
-$path=$_SERVER["https://finanzas-aantik.azurewebsites.net/process_payment/process_payment.php"];
+$path=$_SERVER["https://finanzas-aantik.azurewebsites.net/client/index.php"];
 switch($path){
         case '':
         case '/':
