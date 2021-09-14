@@ -8,10 +8,10 @@ $path=$_SERVER["https://finanzas-aantik.azurewebsites.net/process_payment/proces
 switch($path){
         case '':
         case '/':
-            require __DIR__ . '/../../client/index.html';
+            require __DIR__ . '/../../client/index.php';
             break;
 
-        case 'https://finanzas-aantik.azurewebsites.net/process_payment/process_payment.php':
+        case 'https://finanzas-aantik.azurewebsites.net/client/index.php':
                 // SDK de Mercado Pago
             require __DIR__.'/vendor/autoload.php';
             // Agrega credenciales

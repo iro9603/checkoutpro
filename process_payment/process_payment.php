@@ -1,6 +1,8 @@
 
     <?php
     
+  
+
     header ("Access-Control-Allow-Origin: *");
     header ("Access-Control-Expose-Headers: Content-Length, X-JSON");
     header ("Access-Control-Allow-Methods: GET, POST, PATCH, PUT, DELETE, OPTIONS");
@@ -11,7 +13,7 @@
             case '/':
                 require __DIR__ . '/../../client/index.html';
                 break;
-
+    
             case 'https://finanzas-aantik.azurewebsites.net/process_payment/process_payment.php':
                     // SDK de Mercado Pago
                 require __DIR__.'/vendor/autoload.php';
@@ -43,7 +45,7 @@
                 break;
                 
     }
-        
+    
+    ?>
 
 
-?>
