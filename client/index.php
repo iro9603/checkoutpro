@@ -1,6 +1,6 @@
 <?php
 // SDK de Mercado Pago
-require '\vendor\autoload.php';
+require_once '/vendor/autoload.php';
 // Agrega credenciales
 MercadoPago\SDK::setAccessToken('TEST-11762472748563-081923-f6c1d5d1d637d865580d438da9d492c8-448109497');
 // Crea un objeto de preferencia
@@ -32,7 +32,7 @@ $preference->save();
 <script>
     // Agrega credenciales de SDK
       const mp = new MercadoPago('TEST-624513d5-0f84-4d48-9e89-6fc2479b9a84', {
-            locale: 'es-MXM'
+            locale: 'es-AR'
       });
     
       // Inicializa el checkout
