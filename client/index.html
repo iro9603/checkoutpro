@@ -8,7 +8,7 @@
     <title>Document</title>
 </head>
 <body>
-  <script src="https://sdk.mercadopago.com/js/v2"></script>
+  
   <form id="form-checkout" >
     <input type="text" name="cardNumber" id="form-checkout__cardNumber" />
     <input type="text" name="cardExpirationMonth" id="form-checkout__cardExpirationMonth" />
@@ -24,7 +24,7 @@
     <progress value="0" class="progress-bar">Cargando...</progress>
  </form>
  <!-- Add step #2 -->
- 
+ <script src="https://sdk.mercadopago.com/js/v2"></script>
  <script>
      const mp = new MercadoPago('TEST-624513d5-0f84-4d48-9e89-6fc2479b9a84');
      // Add step #3
@@ -95,7 +95,7 @@
 
       fetch('https://finanzas-aantik.azurewebsites.net/process_payment/process_payment.php', {
         method: "POST",
-        mode:"cors",
+        
         headers: {
           "Content-Type": "application/json",
         },
