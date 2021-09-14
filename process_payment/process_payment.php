@@ -16,7 +16,7 @@
                     // SDK de Mercado Pago
                 require __DIR__.'/vendor/autoload.php';
                 // Agrega credenciales
-                MercadoPago\SDK::setAccessToken('TEST-8901633554153246-091404-3076fccec30c2a1db9e6e04c23dd416c-812487226');
+                MercadoPago\SDK::setAccessToken('TEST-111982131632702-091404-62e51f2adb7306be04a212c0faf5fef7-812478843');
                 $payment = new MercadoPago\Payment();
                 $payment->transaction_amount = (float)$_POST['transactionAmount'];
                 $payment->token = $_POST['token'];
