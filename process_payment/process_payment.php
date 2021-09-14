@@ -16,7 +16,7 @@
     
             case 'https://finanzas-aantik.azurewebsites.net/process_payment/process_payment.php':
                     // SDK de Mercado Pago
-                require __DIR__.'/vendor/autoload.php';
+                require __DIR__.'../vendor/autoload.php';
                 // Agrega credenciales
                 MercadoPago\SDK::setAccessToken('TEST-111982131632702-091404-62e51f2adb7306be04a212c0faf5fef7-812478843');
                 $payment = new MercadoPago\Payment();

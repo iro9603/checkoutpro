@@ -5,7 +5,7 @@
         'type' => 'library',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
-        'reference' => 'e8a4cb9a9621311afcbe7b9bb82c2252c8fb1872',
+        'reference' => 'b76bd5edab7a616edd171bfefa89ef5aaa65e820',
         'name' => '__root__',
         'dev' => true,
     ),
@@ -16,7 +16,7 @@
             'type' => 'library',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
-            'reference' => 'e8a4cb9a9621311afcbe7b9bb82c2252c8fb1872',
+            'reference' => 'b76bd5edab7a616edd171bfefa89ef5aaa65e820',
             'dev_requirement' => false,
         ),
         'doctrine/annotations' => array(
@@ -92,12 +92,14 @@
             'dev_requirement' => false,
         ),
         'mercadopago/dx-php' => array(
-            'pretty_version' => '2.4.2',
-            'version' => '2.4.2.0',
+            'pretty_version' => 'dev-master',
+            'version' => 'dev-master',
             'type' => 'library',
             'install_path' => __DIR__ . '/../mercadopago/dx-php',
-            'aliases' => array(),
-            'reference' => '5b7e2e7ad87f957d712db0bc7cd84b3b1b20ffe0',
+            'aliases' => array(
+                0 => '9999999-dev',
+            ),
+            'reference' => 'dc466c75a2e39bc0aefb976e70493c557c47bc37',
             'dev_requirement' => false,
         ),
         'psr/cache' => array(

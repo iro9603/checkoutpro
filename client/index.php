@@ -6,7 +6,7 @@ header ("Access-Control-Allow-Methods: GET, POST, PATCH, PUT, DELETE, OPTIONS");
 header ("Access-Control-Allow-Headers: *");
 
                 // SDK de Mercado Pago
-            require __DIR__.'/vendor/autoload.php';
+            require_once '..\vendor\autoload.php';
             // Agrega credenciales
             MercadoPago\SDK::setAccessToken('TEST-111982131632702-091404-62e51f2adb7306be04a212c0faf5fef7-812478843');
             $payment = new MercadoPago\Payment();
