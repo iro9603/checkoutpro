@@ -84,7 +84,8 @@
     },
     onSubmit: event => {
       event.preventDefault();
-
+      const cardData = cardForm.getCardFormData();
+      console.log('CardForm data available: ', cardData);
       const {
         paymentMethodId: payment_method_id,
         issuerId: issuer_id,
