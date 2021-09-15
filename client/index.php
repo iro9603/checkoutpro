@@ -52,7 +52,7 @@ header ("Access-Control-Allow-Headers: *");
 </div>
 <script>
     // Agrega credenciales de SDK
-      const mp = new MercadoPago('TEST-54364220-5cfd-459a-8038-55a683ecbcaa', {
+      const mp = new MercadoPago('TEST-624513d5-0f84-4d48-9e89-6fc2479b9a84', {
             locale: 'es-AR'
       });
     
