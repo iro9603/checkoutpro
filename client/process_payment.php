@@ -7,14 +7,14 @@
     header ("Access-Control-Expose-Headers: Content-Length, X-JSON");
     header ("Access-Control-Allow-Methods: GET, POST, PATCH, PUT, DELETE, OPTIONS");
     header ("Access-Control-Allow-Headers: *");
-    $path=$_SERVER["https://finanzas-aantik.azurewebsites.net/process_payment/process_payment.php"];
+    $path=$_SERVER["https://finanzas-aantik.azurewebsites.net/client/process_payment.php"];
     switch($path){
             case '':
             case '/':
                 require __DIR__ . '/../../client/index.html';
                 break;
     
-            case 'https://web-proyecto-iro.azurewebsites.net/process_payment/process_payment.php':
+            case 'https://web-proyecto-iro.azurewebsites.net/client/process_payment.php':
                     // SDK de Mercado Pago
                 require_once 'vendor/autoload.php';
                 // Agrega credenciales
